@@ -14,7 +14,7 @@ A simple and elegant shopping cart built using **HTML**, **CSS**, and **JavaScri
 
 ## 🔗 Live Demo
 
-👉 [Check it out here](https://swaraj-unde.github.io/Ecommerce-Cart/)
+👉 [Check it out here](https://ecommerce-cart-xi-rouge.vercel.app/)
 
 ---
 
