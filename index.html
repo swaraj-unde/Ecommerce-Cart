@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <!-- Product Section -->
+      <section id="top">
+        <h1 id="top-head">Products</h1>
+        <div class="products"></div>
+      </section>
+
+      <!-- Cart Section -->
+      <section id="below">
+        <h2 id="below-head">Shopping Cart</h2>
+
+        <div id="added" class="hidden">
+          <div id="added-products">
+            <div class="added-item">
+              <p class="added-product">Product 1 - $90.99</p>
+              <button class="remove-button">Remove Product</button>
+            </div>
+            <div class="added-item">
+              <p class="added-product">Product 2 - $70.49</p>
+              <button class="remove-button">Remove Product</button>
+            </div>
+          </div>
+
+          <div id="checkout">
+            <p id="total">Total - $0.00</p>
+            <button id="check-button">Checkout</button>
+          </div>
+        </div>
+
+        <div id="not-added" class="hidden">
+          <p id="empty">Your Cart is Empty</p>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

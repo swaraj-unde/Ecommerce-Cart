@@ -1,0 +1,214 @@
+/* === Reset & Base === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2b2c3e);
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+#box {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to right, #2f2f47, #1f1f2f);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* === Sections === */
+#top {
+  padding: 20px;
+}
+
+#below {
+  padding: 16px;
+  margin-top: 30px;
+  background: #2b2b3c;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+#top-head,
+#below-head {
+  font-size: 1.8rem;
+  color: #e1e1f1;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+#below-head {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+/* === Layouts === */
+.products,
+#added-products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#added-products {
+  gap: 12px;
+}
+
+.item,
+.added-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #3b3b4f, #2e2e40);
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.added-item {
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.item:hover {
+  transform: scale(1.01);
+}
+
+.item p,
+.added-item p,
+.added-product {
+  font-size: 1rem;
+  color: #f1f1f1;
+  font-weight: 500;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.added-product {
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.Add {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+}
+
+button.Add:hover {
+  background: linear-gradient(135deg, #5e56d8, #8e82ff);
+  transform: scale(1.05);
+}
+
+.remove-button {
+  background: linear-gradient(135deg, #ff4d4d, #ff9999);
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+.remove-button:hover {
+  background: linear-gradient(135deg, #e53935, #ff6b6b);
+  transform: scale(1.05);
+}
+
+#check-button {
+  background: linear-gradient(135deg, #00c853, #69f0ae);
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+#check-button:hover {
+  background: linear-gradient(135deg, #00b248, #5ef8c2);
+  transform: scale(1.05);
+}
+
+#checkout {
+  margin-top: 20px;
+  padding: 16px;
+  background: #23232f;
+  border-radius: 8px;
+  text-align: right;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#checkout p,
+#total {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+#empty {
+  text-align: center;
+  font-style: italic;
+  color: #ff6b6b;
+  background: #3b2c2c;
+  padding: 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ff9999;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .item,
+  .added-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #checkout {
+    text-align: center;
+  }
+
+  button.Add,
+  .remove-button,
+  #check-button {
+    width: 100%;
+  }
+
+  #below {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #top-head,
+  #below-head {
+    font-size: 1.4rem;
+  }
+
+  .item p,
+  .added-item p {
+    font-size: 0.95rem;
+  }
+
+  #checkout p {
+    font-size: 1rem;
+  }
+}
